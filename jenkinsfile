@@ -5,8 +5,8 @@ node{
     stage('Ansible') {
       ansiblePlaybook (
           colorized: true,          
-          playbook: 'playbook.yml',
-          inventory: 'hosts.yml'
+          playbook: '/var/jenkins_home/workspace/app-salaire/playbook10.yml',
+          inventory: '/var/jenkins_home/workspace/app-salaire/hosts.yml'
       )
     }
 }
